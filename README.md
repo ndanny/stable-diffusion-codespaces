@@ -26,6 +26,7 @@ The next step is to download a stable diffusion model (a checkpoint file) from [
 1. Find a model you want to use in HuggingFace. It could be the general purpose Stable Diffusion model [stabilityai/stable-diffusion-2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1) or a fine-tuned model such as [prompthero/openjourney-v2](https://huggingface.co/prompthero/openjourney-v2).
 2. Once you find a model you want to work with, click on the **Files and versions tab** and look for a file that ends with `.ckpt`. Click that file's link and you'll be navigated to that file's page.
 3. Right click the **download** link and copy it.
+
     <img src="assets/hf_download_link.png" width="500" />
 4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model to this folder using the following command.
     ```

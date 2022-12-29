@@ -1,5 +1,8 @@
 # How to run Stable Diffusion in GitHub Codespaces
+
 Setup your own Stable Diffusion instance in the cloud to generate AI images in minutes using [GitHub Codespaces](https://github.com/features/codespaces). **You don’t need an expensive GPU, storage, or a fast internet connection.**
+
+<img src="assets/banner.png" />
 
 ## Getting Started
 

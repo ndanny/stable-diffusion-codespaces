@@ -1,8 +1,13 @@
-# How to run Stable Diffusion in GitHub Codespaces
+# How to run Stable Diffusion in GitHub Codespaces 🎨
 
-Setup your own Stable Diffusion instance in the cloud to generate AI images in minutes using [GitHub Codespaces](https://github.com/features/codespaces). **You don’t need an expensive GPU or a fast internet connection.** Please read the FAQ and Disclaimer sections at the bottom before getting started.
+Setup your own Stable Diffusion instance in the cloud to generate AI images in minutes using [GitHub Codespaces](https://github.com/features/codespaces). **You don’t need a powerful GPU or a fast internet connection.**
 
 <img src="assets/banner.png" />
+
+## Overview
+- Setup Time ⏱️:
+- A GitHub account is required.
+- Beginner friendly. It helps to have some experience using a terminal, but it's not required.
 
 ## Getting Started
 
@@ -36,12 +41,7 @@ Next, we're going to download a stable diffusion model (a checkpoint file) from 
 4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model to this folder using the following command.
 
     ```
-    cd models/Stable-diffusion && wget https://huggingface.co/prompthero/openjourney-v2/resolve/main/openjourney-v2.ckpt
-    ```
-5. Navigate back to the root directory of the project.
-
-    ```
-    cd ../..
+    cd models/Stable-diffusion && wget https://huggingface.co/prompthero/openjourney-v2/resolve/main/openjourney-v2.ckpt && cd ../..
     ```
 
 ### Step 4: Launch the UI

@@ -56,10 +56,12 @@ You'll get a link where the app is running. If you're on Windows, you can "ctrl 
 
 <img src="assets/output.png" width="500" />
 
-### Step 5 (Optional): Shutdown Codespaces
+### Step 5 (Optional): Stop Codespaces
 
-To save on resources, make sure to stop your Codespace instance once you're done using it. You can do this in the repo UI or using the [GitHub CLI tool](https://cli.github.com).
+To save on resources, make sure to stop or shutdown your Codespace instance once you're done using it. You can do this in the repo UI or using the [GitHub CLI tool](https://cli.github.com).
 
 ## FAQ
 
-## Disclaimers
+## Disclaimer
+
+*The information provided in this guide is intended for educational purposes only. This guide is not meant to be an endorsement or advertisement for GitHub Codespaces or AUTOMATIC1111's UI. It is simply intended to educate the community on how to run Stable Diffusion models in the cloud based on the limited research conducted. Please note that this may not be the optimal way to use Stable Diffusion, but it does provide an option for those with limited access to compute resources. Additionally, this tutorial is intended to follow the [terms of service of GitHub Codespaces](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#codespaces).*

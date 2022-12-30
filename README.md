@@ -39,7 +39,7 @@ Next, we're going to download a stable diffusion model (a checkpoint file) from 
 3. Right click the **download** link and copy the URL.
 
     <img src="assets/hf_download_link.png" width="500" />
-4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model to this folder using the following command.
+4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model to this folder using the following command (replace the link with the URL you copied).
 
     ```
     cd models/Stable-diffusion && wget https://huggingface.co/prompthero/openjourney-v2/resolve/main/openjourney-v2.ckpt && cd ../..

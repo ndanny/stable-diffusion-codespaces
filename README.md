@@ -62,6 +62,33 @@ To save on resources, make sure to stop or shutdown your Codespace instance once
 
 ## FAQ
 
+**Q. Is this free?**\
+A. If you have a GitHub Pro account, you'll have access to the 8-core Codespaces machine type required for this. Otherwise, you'll have to setup billing for Codespaces. If you're a student, most universities will hook you up with a student developer account, which will enable you to have Pro enabled on your account.
+
+**Q. Who is this guide for?**\
+A. This is meant for people who want to use their own instance of Stable Diffusion (text-to-img, img-to-img, inpainting, etc) and who doesn't have a powerful computer or fast internet to follow the other existing local setup guides available.
+
+**Q. Is my usage private?**\
+A. Yes. Your Codespace instance is private to you.
+
+**Q. Can't I just use Google Colab?**\
+A. Sure, you can do that if it works for you. There are performance differences and some beginners might find Colab difficult to use, so this offers an alternative.
+
+**Q. How long does it typically take to generate an image?**\
+A. Since this method uses CPU and not GPU, I found that it usually takes 2-3 minutes for text-to-image generation.
+
+**Q. Can I use a GPU in Codespaces instead?**\
+A. Apparently it's possible to configure your Codespaces environment with a GPU (which should speed up performance considerably), but I've only done surface level research on this, which isn't included in this guide. Perhaps when I have more time I'll look into it and append instructions to this guide.
+
+**Q. What if I want to use my own fine-tuned model that I have on my local machine, not one from HuggingFace?**\
+A. You can drag and drop your model from your local computer to a folder in your VSCode editor. Please note that this means you'll be uploading a model to your Codespaces machine using your home internet. This may take longer depending on how fast your internet speed is.
+
+**Q. Where can I find other fine-tuned ML models based on Stable Diffusion?**\
+A. Explore HuggingFace https://huggingface.co/models?pipeline_tag=text-to-image&sort=likes or other similar services.
+
+**Q. I have questions, who can I ask?**\
+A. Please don't reach out directly. Either file an issue or create a new discussion in this repo with your question or comment.
+
 ## Disclaimer
 
 *The information provided in this guide is intended for educational purposes only. This guide is not meant to be an endorsement or advertisement for GitHub Codespaces or AUTOMATIC1111's UI. It is simply intended to educate the community on how to run Stable Diffusion models in the cloud based on the limited research conducted. Please note that this may not be the optimal way to use Stable Diffusion, but it does provide an option for those with limited access to compute resources. Additionally, this tutorial is intended to follow the [terms of service of GitHub Codespaces](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#codespaces).*

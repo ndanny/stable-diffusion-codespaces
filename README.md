@@ -26,10 +26,10 @@ Install the libgl1 dependency in your new Codespace by executing the following c
 
 ### Step 3: Download a Stable Diffusion model
 
-Next, we're going to download a stable diffusion model (a checkpoint file) from [HuggingFace](https://huggingface.co) and put it in the `models/Stable-diffusion` folder. These models are often big (2-10GB), so here's a trick to retrieve a checkpoint file and put it in your Codespace in seconds without using any of your internet bandwidth.
+Next, we're going to download a stable diffusion model (a checkpoint file) from [HuggingFace](https://huggingface.co) and put it in the `models/Stable-diffusion` folder. These models are often big (2-10GB), so here's a trick to retrieve it and put it in your Codespace in seconds without using any of your internet bandwidth.
 
 1. Find a model you want to use in HuggingFace. It could be the general purpose Stable Diffusion model [stabilityai/stable-diffusion-2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1) or a fine-tuned model such as [prompthero/openjourney-v2](https://huggingface.co/prompthero/openjourney-v2).
-2. Once you find a model you want to work with, click on the **Files and versions tab** and look for a file that ends with `.ckpt`. Click that file's link and you'll be navigated to the checkout file's page.
+2. Once you find a model you want to work with, click on the **Files and versions tab** and look for a file that ends with `.ckpt`. Click that model's link and you'll be navigated to that checkpoint file's page.
 3. Right click the **download** link and copy the URL.
 
     <img src="assets/hf_download_link.png" width="500" />

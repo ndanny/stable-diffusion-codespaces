@@ -52,9 +52,11 @@ Your setup is almost done! Use the command below in your Codespace terminal to l
 ./webui.sh --skip-torch-cuda-test --precision full --no-half
 ```
 
-You'll get a link where the app is running. If you're on Windows, you can "ctrl + click" the link or if you're on Mac, you can "command + click" to open the link.
+You'll get a link to the UI application in your terminal once everything is installed. If you're on Windows, you can "ctrl + click" the link. If you're on Mac, you can "cmd + click" to open the link.
 
 <img src="assets/output.png" width="500" />
+
+<img src="assets/ui.png" width="700" />
 
 ### Step 5 (Optional): Stop Codespaces
 

@@ -57,6 +57,8 @@ You'll get a link to the UI application in your terminal once everything is inst
 
 <img src="assets/output.png" width="500" />
 
+**If everything went smoothly, you should now have access to the UI where you can now start prompting! 🚀**
+
 <img src="assets/ui.png" width="700" />
 
 ### Step 5 (Optional): Stop Codespaces

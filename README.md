@@ -5,9 +5,10 @@ Setup your own Stable Diffusion instance in the cloud to generate AI images in m
 <img src="assets/banner.png" />
 
 ## Overview
-- Setup Time ⏱️:
-- A GitHub account is required.
-- Beginner friendly. It helps to have some experience using a terminal, but it's not required.
+
+- **⏱️ Estimated Setup Time**: 7 minutes
+- 🐙 A GitHub account is required.
+- 🤗 Beginner friendly. It helps to have some experience using a terminal, but it's not required.
 
 ## Getting Started
 

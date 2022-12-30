@@ -14,7 +14,7 @@ Setup your own Stable Diffusion instance in the cloud to generate AI images in m
 
 ### Step 1: Create a Codespace
 
-We'll be using [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui). With over 25k stars  and 280 contributers, this open source project is a good start that will work.
+We'll be using an open source UI with over 25k stars and 280 contributers for our setup.
 
 1. Navigate to the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) repo. Click on the **Code** dropdown button, navigate to the **Codespaces** tab, and click **New with options...**
 2. Leave everything as is, but change the machine type to **8-core • 16GB RAM • 64GB storage**. *This is the minimum machine type required to run Stable Diffusion. If you don't have this option, please read the FAQ below.*
@@ -32,14 +32,14 @@ Install the libgl1 dependency in your new Codespace by executing the following c
 
 ### Step 3: Download a Stable Diffusion model
 
-Next, we're going to download a stable diffusion model (a checkpoint file) from [HuggingFace](https://huggingface.co) and put it in the `models/Stable-diffusion` folder. These models are often big (2-10GB), so here's a trick to retrieve it and put it in your Codespace in seconds without using any of your internet bandwidth.
+Next, we're going to download a Stable Diffusion model (a checkpoint file) from [HuggingFace](https://huggingface.co) and put it in the `models/Stable-diffusion` folder. These models are often big (2-10GB), so here's a trick to download a model and store it in your Codespace environment in seconds without using your own internet bandwidth.
 
 1. Find a model you want to use in HuggingFace. It could be the general purpose Stable Diffusion model [stabilityai/stable-diffusion-2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1) or a fine-tuned model such as [prompthero/openjourney-v2](https://huggingface.co/prompthero/openjourney-v2).
-2. Once you find a model you want to work with, click on the **Files and versions tab** and look for a file that ends with `.ckpt`. Click that model's link and you'll be navigated to that checkpoint file's page.
+2. Once you find a model you want to work with, click on the **Files and versions tab** and look for a file that ends with `.ckpt`. Click that model's link and you'll be directed to that checkpoint file's page.
 3. Right click the **download** link and copy the URL.
 
     <img src="assets/hf_download_link.png" width="500" />
-4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model to this folder using the following command (replace the link with the URL you copied).
+4. Back in your Codespace terminal, navigate to the `models/Stable-diffusion` folder and download the model in this folder using the following command (replace the link below with the URL you copied if you want).
 
     ```
     cd models/Stable-diffusion && wget https://huggingface.co/prompthero/openjourney-v2/resolve/main/openjourney-v2.ckpt && cd ../..
@@ -47,7 +47,7 @@ Next, we're going to download a stable diffusion model (a checkpoint file) from 
 
 ### Step 4: Launch the UI
 
-Your setup is almost done! Use the command below in your Codespace terminal to launch the UI. It'll take a minute to install dependencies and launch the app.
+Your setup is almost done! Use the command below in your Codespace terminal to launch the UI. It'll take a few minutes to install dependencies and launch the app.
 
 ```
 ./webui.sh --skip-torch-cuda-test --precision full --no-half
@@ -55,9 +55,13 @@ Your setup is almost done! Use the command below in your Codespace terminal to l
 
 You'll get a link to the UI application in your terminal once everything is installed. If you're on Windows, you can "ctrl + click" the link. If you're on Mac, you can "cmd + click" to open the link.
 
+<details>
+    <summary>Click to see example</summary>
+    
 <img src="assets/output.png" width="500" />
+</details>
 
-**If everything went smoothly, you should now have access to the UI where you can now start prompting! 🚀**
+**✅ If everything went smoothly, you should have access to the UI where you can start generating images!**
 
 <img src="assets/ui.png" width="700" />
 
@@ -68,31 +72,31 @@ To save on resources, make sure to stop or shutdown your Codespace instance once
 ## FAQ
 
 **Q. Is this free?**\
-A. If you have a GitHub Pro account, you'll have access to the 8-core Codespaces machine type required for this. Otherwise, you'll have to setup billing for Codespaces. If you're a student, most universities will hook you up with a student developer account, which will enable you to have Pro enabled on your account.
+A. If you have a GitHub Pro account, you'll have access to the 8-core Codespaces machine type required for this. Otherwise, you'll have to setup billing for Codespaces. If you're a student, most universities will hook you up with a student developer account, which is essentially Pro.
 
 **Q. Who is this guide for?**\
-A. This is meant for people who want to use their own instance of Stable Diffusion (text-to-img, img-to-img, inpainting, etc) and who doesn't have a powerful computer or fast internet to follow the other existing local setup guides available.
+A. This guide is meant for people who want to use their own instance of Stable Diffusion (text-to-img, img-to-img, inpainting, etc) and who doesn't have a powerful computer or fast internet to follow the other existing local setup guides available.
 
 **Q. Is my usage private?**\
 A. Yes. Your Codespace instance is private to you.
 
 **Q. Can't I just use Google Colab?**\
-A. Sure, you can do that if it works for you. There are performance differences and some beginners might find Colab difficult to use, so this offers an alternative.
+A. Sure, you can do that if you prefer. Although, there are performance differences and some people may find Colab difficult to use.
 
 **Q. How long does it typically take to generate an image?**\
-A. Since this method uses CPU and not GPU, I found that it usually takes 2-3 minutes for text-to-image generation.
+A. Since this guide uses CPU for inference, I found that it usually takes 2-3 minutes for text-to-image generation (whereas GPU inference will take a few seconds).
 
-**Q. Can I use a GPU in Codespaces instead?**\
-A. Apparently it's possible to configure your Codespaces environment with a GPU (which should speed up performance considerably), but I've only done surface level research on this, which isn't included in this guide. Perhaps when I have more time I'll look into it and append instructions to this guide.
+**Q. Can I use a GPU in Codespaces?**\
+A. Apparently it's possible to configure your Codespaces environment with a GPU (which should speed up performance considerably), but I've only done surface level research on how to do this. When I have more time I'll look into how you can use GPUs in Codespaces and apply that to this guide.
 
 **Q. What if I want to use my own fine-tuned model that I have on my local machine, not one from HuggingFace?**\
-A. You can drag and drop your model from your local computer to a folder in your VSCode editor. Please note that this means you'll be uploading a model to your Codespaces machine using your home internet. This may take longer depending on how fast your internet speed is.
+A. You can drag and drop your custom model from your local computer to your VSCode editor. This may take awhile, depending on your internet speed. You can also host your model online and download it remotely to your Codespace environment.
 
 **Q. Where can I find other fine-tuned ML models based on Stable Diffusion?**\
 A. Explore HuggingFace https://huggingface.co/models?pipeline_tag=text-to-image&sort=likes or other similar services.
 
 **Q. I have questions, who can I ask?**\
-A. Please don't reach out directly. Either file an issue or create a new discussion in this repo with your question or comment.
+A. Either file an issue or create a new discussion in this repo with your question or comment.
 
 ## Disclaimer
 

@@ -58,7 +58,7 @@ You'll get a link where the app is running. If you're on Windows, you can "ctrl 
 
 ### Step 5 (Optional): Shutdown Codespaces
 
-To save on resources and to stop incurring minutes, make sure to stop your Codespace instance once you're done with it.
+To save on resources, make sure to stop your Codespace instance once you're done using it. You can do this in the repo UI or using the [GitHub CLI tool](https://cli.github.com).
 
 ## FAQ
 
